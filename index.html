@@ -7,16 +7,302 @@
     <meta name="keyword" content="WINDMOE.COM,假面骑士W,假面骑士剑">
     <meta name="author" content="WindMoE">
     <title>WINDMOE.COM - New E</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    script type="text/javascript" src="http://image.yodobashi.com/common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="http://image.yodobashi.com/common/js/jquery.jsonp-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://image.yodobashi.com/common/js/yjson.js"></script>
+<script type="text/javascript" src="../../../../js/nav.js"></script>
+<script type="text/javascript" src="http://image.yodobashi.com/common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="http://image.yodobashi.com/common/js/jquery.jsonp-2.1.4.min.js"></script>
+    <style>@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: "Lucida Grande","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","ＭＳ Ｐゴシック",Osaka,sans-serif;
+    font-size:13px;
+}
+
+p {
+    line-height:1.8;
+}
+
+a {
+    text-decoration: none; 
+    color: #000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a img {
+    border: none;
+}
+
+.clear {
+    clear:both;
+    font-size:0;
+    height:0;
+    line-height:0;
+    margin:0;
+    padding:0;
+}
+
+
+
+/* wrapper --------------------------------------------------------------------------------  */
+
+div#wrapper {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* header --------------------------------------------------------------------------------  */
+
+div#header {
+    padding: 55px 0 15px 0;
+}
+
+div#header h3 {
+    text-indent: -9999px;
+    background:url(../../../../img/common/insidepylogo.gif) no-repeat;
+    width:246px;
+    height:78px;
+}
+
+div#header a.pyhome {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/backhome.gif) no-repeat;
+    width:131px;
+    height:47px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+div#header a.pyhome:hover {
+    background:url(../../../../img/common/backhome_on.gif) no-repeat;
+}
+
+
+/* footer --------------------------------------------------------------------------------  */
+
+div#footer {
+    clear: both;
+    position: relative;
+    margin: 20px 0;
+    padding: 5px 0;
+    border-top: solid 1px #ccc;
+}
+
+div#footer a.pyhome {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/flogo.gif) no-repeat;
+    width:192px;
+    height:21px;
+}
+
+div#footer p.copyright {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/fcr.gif) no-repeat;
+    width:430px;
+    height:21px;
+    position: absolute;
+    top: 4px;
+    left: 195px;
+}
+
+div#footer a.policy {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/ftokusho.gif) no-repeat;
+    width:144px;
+    height:21px;
+    position: absolute;
+    top: 4px;
+    right: 195px;
+}
+
+div#footer a.howto {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/fhowto.gif) no-repeat;
+    width:193px;
+    height:21px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+div#footer a.dotcomlogo {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/fyodocom.gif) no-repeat;
+    width:200px;
+    height:49px;
+    margin: 30px auto;
+}
+
+
+
+/* contents --------------------------------------------------------------------------------  */
+
+#content {
+    padding: 0 0 40px 0;
+}
+
+#content h1, #content h2 {
+    margin: 35px 0;
+}
+
+#content p {
+    margin: 0 0 40px 0;
+}
+
+#content p.photo {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+#content p.sign {
+    text-align: right;
+    margin: -20px 0 40px 0;
+}
+
+#content p.separator {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/kugiri.gif) no-repeat;
+    width:960px;
+    height:120px;
+    margin: 0 auto;
+}
+
+
+div.left {
+    float: left;
+    width: 470px;
+}
+div.right {
+    float: right;
+    width: 470px;
+}
+.clear {
+    clear: both;
+}
+
+
+/* cart --------------------------------------------------------------------------------  */
+
+p.price {
+    color:red;
+    font-weight:bold;
+    line-height:1.2;
+}
+
+p.fixedprice,
+span.tax {
+    color:#888888;
+}
+
+
+div.shoppingL {
+    width:450px;
+    float:left;
+    margin-bottom:40px;
+}
+
+div.shoppingR {
+    width:450px;
+    float:right;
+    margin-bottom:40px;
+}
+
+div.shoppingL p,
+div.shoppingR p {
+    margin:0;
+    padding:0;
+}
+
+p.ptitle {
+    font-weight:bold;
+}
+
+p.pread {
+margin-bottom:10px !important;
+}
+
+div.shoppingimg {
+text-align:center;
+}
+
+div.cartBtnImg {
+    text-align:right;
+}
+
+div.cartBtnImg input {
+margin-top:20px;
+}
+
+
+
+/* sns --------------------------------------------------------------------------------  */
+
+#snsButton {
+margin: 20px 0 40px 0;
+text-align: left;
+float: left;
+}
+
+#snsButton ul {
+padding: 0;
+float: left;
+}
+
+#snsButton li {
+margin-right: 10px;
+float: left;
+}
+
+p.date {
+clear: both;
+text-align: right;
+font-size: x-small;
+color: #888;
+}
+#content p { text-align: justify; }
+</style>
   </head>
 
   <body>
-    <div class="container">
-    <div class="starter-template">
-    <p>许久没有写HTML了，有点生疏，所以还在调试中。</p>
-    <img src="img/01.jpg" alt="美丽的求知背影"/>
-    <p>《美丽的求知背影》，暨图2014摄影大赛优秀奖得奖作品。这个依靠在书架、娴静且认真地翻看《好女人兵法》的女生，我想她是在琢磨书中的一条条成为聪明好女人的秘诀吧，而且她的背影凸显了无尽的求知欲，以及特有的知性美。</p>
-    </div>
-    </div>
+    <div id="wrapper">
+    <div id="content">
+        <p>许久没有写HTML了，有点生疏，所以还在调试中。</p>
+
+<p class="photo"><img src="img/01.jpg" alt="美丽的求知背影"/></p>
+
+<p>《美丽的求知背影》，暨图2014摄影大赛优秀奖得奖作品。这个依靠在书架、娴静且认真地翻看《好女人兵法》的女生，我想她是在琢磨书中的一条条成为聪明好女人的秘诀吧，而且她的背影凸显了无尽的求知欲，以及特有的知性美。</p>
+</div>
+</div>
   </body>
 </html>
