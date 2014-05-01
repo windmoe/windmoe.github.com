@@ -3,77 +3,301 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="暨南大学外国语学院外文报Explorer官方网站">
-    <meta name="keyword" content="Jinan University College Of Forigen Studies,暨南大学外国语学院外文报Explorer,新闻办,生活版,日语版">
-    <meta name="author" content="WE">
-    <title>EXPLORER - Jinan University College Of Forigen Studies</title>
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="author" content="WindMoE">
+    <title>WINDMOE.COM - New E</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>body {
-  padding-top: 70px;
+    <style>@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
 }
-.bs-docs-nav {
-  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
-  background-color: #215cb2;
-  border-color: #215cb2;
-  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: "Lucida Grande","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","ＭＳ Ｐゴシック",Osaka,sans-serif;
+    font-size:13px;
 }
-.bs-docs-nav .navbar-collapse {
-  border-color: #215cb2;
+
+p {
+    line-height:1.8;
 }
-.bs-docs-nav .navbar-brand {
-  color: #fff;
+
+a {
+    text-decoration: none; 
+    color: #000;
 }
-.bs-docs-nav .navbar-nav > li > a {
-  color: #96b9eb;
+
+a:active {
+    text-decoration: none;
+    color: #000;
 }
-.bs-docs-nav .navbar-nav > li > a:hover {
-  color: #fff;
+
+a:visited {
+    text-decoration: none;
+    color: #000;
 }
-.bs-docs-nav .navbar-nav > .active > a,
-.bs-docs-nav .navbar-nav > .active > a:hover {
-  color: #fff;
-  background-color: #215cb2;
+
+a:hover {
+    text-decoration: underline;
 }
-.bs-docs-nav .navbar-toggle {
-  border-color: #96b9eb;
+
+a img {
+    border: none;
 }
-.bs-docs-nav .navbar-toggle:hover {
-  background-color: #215cb2;
-  border-color: #96b9eb;
+
+.clear {
+    clear:both;
+    font-size:0;
+    height:0;
+    line-height:0;
+    margin:0;
+    padding:0;
+}
+
+
+
+/* wrapper --------------------------------------------------------------------------------  */
+
+div#wrapper {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* header --------------------------------------------------------------------------------  */
+
+div#header {
+    padding: 55px 0 15px 0;
+}
+
+div#header h3 {
+    text-indent: -9999px;
+    background:url(../../../../img/common/insidepylogo.gif) no-repeat;
+    width:246px;
+    height:78px;
+}
+
+div#header a.pyhome {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/backhome.gif) no-repeat;
+    width:131px;
+    height:47px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+div#header a.pyhome:hover {
+    background:url(../../../../img/common/backhome_on.gif) no-repeat;
+}
+
+
+/* footer --------------------------------------------------------------------------------  */
+
+div#footer {
+    clear: both;
+    position: relative;
+    margin: 20px 0;
+    padding: 5px 0;
+    border-top: solid 1px #ccc;
+}
+
+div#footer a.pyhome {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/flogo.gif) no-repeat;
+    width:192px;
+    height:21px;
+}
+
+div#footer p.copyright {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/fcr.gif) no-repeat;
+    width:430px;
+    height:21px;
+    position: absolute;
+    top: 4px;
+    left: 195px;
+}
+
+div#footer a.policy {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/ftokusho.gif) no-repeat;
+    width:144px;
+    height:21px;
+    position: absolute;
+    top: 4px;
+    right: 195px;
+}
+
+div#footer a.howto {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/fhowto.gif) no-repeat;
+    width:193px;
+    height:21px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+div#footer a.dotcomlogo {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/fyodocom.gif) no-repeat;
+    width:200px;
+    height:49px;
+    margin: 30px auto;
+}
+
+
+
+/* contents --------------------------------------------------------------------------------  */
+
+#content {
+    padding: 0 0 40px 0;
+}
+
+#content h1, #content h2 {
+    margin: 35px 0;
+}
+
+#content p {
+    margin: 0 0 40px 0;
+}
+
+#content p.photo {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+#content p.sign {
+    text-align: right;
+    margin: -20px 0 40px 0;
+}
+
+#content p.separator {
+    display: block;
+    text-indent: -9999px;
+    background:url(../../../../img/common/kugiri.gif) no-repeat;
+    width:960px;
+    height:120px;
+    margin: 0 auto;
+}
+
+
+div.left {
+    float: left;
+    width: 470px;
+}
+div.right {
+    float: right;
+    width: 470px;
+}
+.clear {
+    clear: both;
+}
+
+
+/* cart --------------------------------------------------------------------------------  */
+
+p.price {
+  color:red;
+  font-weight:bold;
+  line-height:1.2;
+}
+
+p.fixedprice,
+span.tax {
+  color:#888888;
+}
+
+
+div.shoppingL {
+  width:450px;
+  float:left;
+  margin-bottom:40px;
+}
+
+div.shoppingR {
+  width:450px;
+  float:right;
+  margin-bottom:40px;
+}
+
+div.shoppingL p,
+div.shoppingR p {
+  margin:0;
+  padding:0;
+}
+
+p.ptitle {
+  font-weight:bold;
+}
+
+p.pread {
+margin-bottom:10px !important;
+}
+
+div.shoppingimg {
+text-align:center;
+}
+
+div.cartBtnImg {
+  text-align:right;
+}
+
+div.cartBtnImg input {
+margin-top:20px;
+}
+
+
+
+/* sns --------------------------------------------------------------------------------  */
+
+#snsButton {
+margin: 20px 0 40px 0;
+text-align: left;
+float: left;
+}
+
+#snsButton ul {
+padding: 0;
+float: left;
+}
+
+#snsButton li {
+margin-right: 10px;
+float: left;
+}
+
+p.date {
+clear: both;
+text-align: right;
+font-size: x-small;
+color: #888;
 }
 </style>
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">EXPLORER</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://fc.jnu.edu.cn/" target="_blank"><span class="glyphicon glyphicon-home"></span> College of Foreign Studies of Jinan University</a></li>
-            <li><a href="about.html"><span class="glyphicon glyphicon-book"></span> About</a></li>
-            <li><a href="submit.html"><span class="glyphicon glyphicon-send"></span> Submit</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-        <p><a class="btn btn-danger btn-lg btn-block" href="07.html">No.7</a></p>
-        <p><a class="btn btn-primary btn-lg btn-block" href="06.html">No.6</a></p>
-        <p><a class="btn btn-warning btn-lg btn-block" href="05.html">No.5</a></p>
-        <p><a class="btn btn-info btn-lg btn-block" href="04.html">No.4</a></p>
-        <p><a class="btn btn-success btn-lg btn-block" href="03.html">No.3</a></p>
-        <p><a class="btn btn-warning btn-lg btn-block" href="02.html">No.2</a></p>
-        <p><a class="btn btn-primary btn-lg btn-block" href="01.html">No.1</a></p>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <div id="content">
+
+<p class="photo"><img src="img/01.jpg" width="960" height="636" /></p>
+
+<p>ライカにはAPS-Cサイズのセンサーを搭載した 「LEICA X2」「LEICA X Vario」などがラインアップされていますが、この度全く新規のマウントを搭載したミラーレス機が登場。数年前までは「LEICA M8」のみで、ライカといえば&quot;フイルムのM型&quot;といった印象が強かったメーカーですが、気がついてみれば中判デジタルからコンパクトデジタルまで随分充実したものですね。日本のカメラメーカーに比べれば、そう大きな規模ではないメーカーですが、全く新規にマウントを興して激戦区であるミラーレス機を投入してくるには、ライカらしくアイコニックでコンセプチュアルなモデルなのでしょう。まずは画のほうからじっくり観察してみましょう。</p>
+<p class="sign">( 写真 / 文：K )</p>
+<p class="date" style="text-align: right;">( 2014.05.01 )</p>
+<div id="snsButton"></div>
+<div class="clear"></div>
+</div>
   </body>
 </html>
