@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="WINDMOE.COM 一个关注假面骑士&日本动漫的博客">
-    <meta name="keyword" content="WINDMOE.COM,假面骑士W,假面骑士剑">
-    <meta name="author" content="WindMoE">
-    <title>WINDMOE.COM - New E</title>
-    <style type="text/css">@charset "UTF-8";
+@charset "UTF-8";
 /* CSS Document */
 
 * {
@@ -439,18 +430,3 @@ color: #888;
 }
 
 #content p { text-align: justify; }
-</style>
-  </head>
-
-  <body>
-    <div id="wrapper">
-    <div id="content">
-        <p>许久没有写HTML了，有点生疏，所以还在调试中。</p>
-
-<p class="photo"><img src="img/01.jpg" alt="美丽的求知背影" width="960" height="720"/></p>
-
-<p>《美丽的求知背影》，暨图2014摄影大赛优秀奖得奖作品。这个依靠在书架、娴静且认真地翻看《好女人兵法》的女生，我想她是在琢磨书中的一条条成为聪明好女人的秘诀吧，而且她的背影凸显了无尽的求知欲，以及特有的知性美。</p>
-</div>
-</div>
-  </body>
-</html>
